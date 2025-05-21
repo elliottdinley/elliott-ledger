@@ -1,0 +1,6 @@
+CREATE TABLE account (
+    id SERIAL PRIMARY KEY,
+    holder_name VARCHAR(100) NOT NULL,
+    balance NUMERIC(12, 2) DEFAULT 0.00,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
